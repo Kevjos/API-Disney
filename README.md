@@ -1,16 +1,36 @@
 # API-Disney
-Esta API está orientada a resolver el challenge de Alkemy en el que hay que hacer una API para explorar el mundo de Disney, la cual permitirá conocer y modificar los personajes que lo componen y entender en qué películas estos participaron.
+This API is oriented to solve the Alkemy challenge in which you have to make an API to explore the world of Disney, which will allow you to know and modify the characters that compose it and understand in which movies they participated.
 
-## Documentación: 
-<https://documenter.getpostman.com/view/5261741/Uyr7JKGZ>
+### List of technologies used within the project:
 
+* [Node.js](https://nodejs.org/): Version 14.16.0
+* [Express.js](https://expressjs.com/): Version 4.17.3
+* [Express-fileupload](https://www.npmjs.com/package/express-fileupload): Version 1.3.1
+* [Nodemailer](https://nodemailer.com): Version 6.7.3
+* [Mysql2](https://www.npmjs.com/package/mysql2): Version 2.3.3
+* [Sequelize](https://sequelize.org): Version 6.18.0
+* [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken): Version 8.5.1
+* [cors](https://www.npmjs.com/package/cors): Version 2.8.5
+* [bcrypt](https://www.npmjs.com/package/bcrypt): Version 5.0.1
+
+### Installation
+To install and run this proyect just type and execute
+```
+$ git clone https://github.com/Kevjos/API-Disney
+$ cd ../path/to/the/file
+$ npm install
+$ npm start
+```
 
 ### Email
-Para el envío del email se deben ingresar en el archivo .env su usuario y contraseña del servicio que decida usar(Mailtrap o Gmail), por defecto está configurado para usar Mailtrap, para ello debe crear una cuenta e ingresar sus credenciales.
+To send the email you must enter in the .env file your username and password of the service you choose to use (Mailtrap or Gmail), by default it is configured to use Mailtrap, for this you must create an account and enter your credentials.
 
-Si decide usar Gmail, debe poner sus credenciales en el archivo .env, habilitar el acceso de aplicaciones poco seguras en su cuenta, siempre que no tenga habilitada la verificación en dos pasos. También debe modificar el archivo controllers/AuthController.js en las líneas 93 y 94 y cambiar lo siguiente:
+If you decide to use Gmail, you must put your credentials in the .env file, enable the access of unsecured applications in your account, as long as you do not have two-step verification enabled. You should also modify the controllers/AuthController.js file on lines 93 and 94 and change the following:
 
 HOST_EMAIL_MAILTRAP por HOST_EMAIL_GMAIL
 
 
 PORT_EMAIL_MAILTRAP por PORT_EMAIL_GMAIL
+
+## Documentation: 
+<https://documenter.getpostman.com/view/5261741/Uyr7JKGZ>
